@@ -1,0 +1,10 @@
+linters:
+  enable-all: true
+  disable:
+    - staticcheck # Disable specific linters if needed
+run:
+  skip-dirs:
+    - "/opt/hostedtoolcache/go/.*" # Exclude standard library files from linting
+issues:
+  exclude-rules:
+    - path: ".*src/.*"
